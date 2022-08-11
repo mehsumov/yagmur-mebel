@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="favicon" rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/wowslider.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Yağmur Mebel Azərbaycan</title>
+</head>
+
+<body>
+    <div class="modal fade" id="get-offer" tabindex="-1" aria-labelledby="get-offerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="get-offerLabel">Zəng sifarişi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form custom-form">
+                        <form method="post">
+                            <input type="text" name="isim" class="effect" placeholder="Ad, Soyad" />
+
+                            <input type="text" name="telefon" class="effect" placeholder="Telefon nömrəniz" />
+
+                            <input type="text" name="company" class="effect" placeholder="Təmsil etdiyiniz şirkət" />
+
+                            <textarea rows="6" name="mesaj" class="effect" placeholder="Qeydləriniz"></textarea>
+
+                            <input class="submit-btn" type="submit" name="submit" value="Göndər" />
+                            <div class="loading"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl p-0">
+                <a class="navbar-brand" href="/">
+                    <img src="./img/logo.png" alt="logo">
+                </a>
+                <ul class="lang-list d-none d-block-xl">
+                    <li class="active"><a href="/">AZ</a></li>
+                    <li><a href="/en/">EN</a></li>
+                    <li><a href="/ru/">RU</a></li>
+                </ul>
+                <div class="collapse navbar-collapse" id="myMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <ul class="lang-list d-block d-none-xl">
+                            <li class="active"><a href="/">AZ</a></li>
+                            <li><a href="/en/">EN</a></li>
+                            <li><a href="/ru/">RU</a></li>
+                        </ul>
+                        <li class="nav-item custom-dropdown-menu-wrap">
+                            <a class="nav-link" href="javascript:void(0)">Haqqımızda <i
+                                    class="fas fa-sort-down"></i></a>
+                            <div class="custom-dropdown-menu">
+                                <ul class="menu-list">
+                                    <li><a href="/">Biz kimik</a></li>
+                                    <li><a href="/">Tariximiz</a></li>
+                                    <li><a href="/">Missiya və vizyonumuz</a></li>
+                                    <li><a href="/">Direktorun müraciəti</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item custom-dropdown-menu-wrap">
+                            <a class="nav-link" href="javascript:void(0)">Məhsullar <i class="fas fa-sort-down"></i></a>
+                            <div class="custom-dropdown-menu">
+                                <ul class="menu-list">
+                                    <li><a href="/">Yataq dəstləri</a></li>
+                                    <li><a href="/">Yumşaq dəstlər</a></li>
+                                    <li><a href="/">Qonaq dəstləri</a></li>
+                                    <li><a href="/">Gənc otaqları</a></li>
+                                    <li><a href="/">Aksesuar</a></li>
+                                    <li><a href="/">Matraslar</a></li>
+                                    <li><a href="/">Bütün məhsullar</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Kampaniyalar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Təklif və iradlarınız</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Əlaqə</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://api.whatsapp.com/send?phone=+994507764545&amp;text=Salam, sizə www.yagmurmebel.az saytından yazıram."
+                                class="wp-btn" target="_blank">
+                                <i class="fab fa-whatsapp"></i>Birbaşa whatsapp-a yaz
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#myMenu"
+                    aria-controls="#myMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="menu-wrapper">
+                        <div class="menu-wrap">
+                            <div class="menu-open menu-icon">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="menu-close menu-icon">
+                                <img src="./img/cancel-iconn.png" alt="close-menu">
+                            </div>
+                        </div>
+                        <span>Menu</span>
+                    </div>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="main">
+        <div id="wowslider-container1">
+            <div class="ws_images">
+                <ul>
+                    <li>
+                        <img src="./img/autumn-tree1.jpeg" alt="item1" title="item1" id="wows1_0" />
+                        <div class="slide-title-wrap">
+                            <div class="slide-title">Yağmur mebel ilə həyatınıza rəng qatın</div>
+                            <a href="/" class="more-btn">
+                                <div class="more-btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span>Ətraflı</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/slide22.jpg" alt="item2" title="item2" id="wows1_1" />
+                        <div class="slide-title-wrap">
+                            <div class="slide-title">Mükəmməl dizayn və keyfiyyət sərfəli qiymətə</div>
+                            <a href="/" class="more-btn">
+                                <div class="more-btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span>Ətraflı</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./img/slide33.jpg" alt="item3" title="item3" id="wows1_2" />
+                        <div class="slide-title-wrap">
+                            <div class="slide-title">Xəyalınızdakı evi bizimlə dizayn edin</div>
+                            <a href="/" class="more-btn">
+                                <div class="more-btn-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span>Ətraflı</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="ws_bullets">
+                <div>
+                    <a href="javascript:void(0)"><span><img src="./img/autumn-tree1.jpeg" alt="item1" />1</span></a>
+                    <a href="javascript:void(0)"><span><img src="./img/slide22.jpg" alt="item2" />2</span></a>
+                    <a href="javascript:void(0)"><span><img src="./img/slide33.jpg" alt="item3" />3</span></a>
+                </div>
+                <div class="bullet-progress"></div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </section>
+    <section id="best-products" class="mouse-wheel">
+        <div class="container">
+            <div class="title-row">
+                <h3 class="title">Çox satılanlar</h3>
+                <div class="custom-nav"></div>
+            </div>
+            <div class="best-products-carousel owl-carousel owl-theme">
+                <div class="product-box">
+                    <div class="box-top">
+                        <span class="product-cat">Gənc otaqları / Çox satılanlar</span>
+                        <div class="heart"><svg width="17px" height="17px" viewBox="0 0 17 17"
+                                xmlns="http://www.w3.org/2000/svg" class="heart--img" preserveAspectRatio="none">
+                                <path
+                                    d="M8.435 16.323l7.23-8.168c1.777-1.866 1.777-4.9 0-6.766-1.763-1.852-4.613-1.852-6.376 0-.14.146-.27.3-.388.463l-.403.547-.403-.547a4.752 4.752 0 0 0-.387-.463c-1.764-1.852-4.613-1.852-6.377 0-1.777 1.866-1.777 4.9.015 6.782l7.09 8.152z"
+                                    fill="#FFF" fill-rule="evenodd"></path>
+                            </svg>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                        </div>
+                    </div>
+                    <a href="/">
+                        <div class="img-wrap">
+                            <img src="./img/genc desti.jpg" alt="product">
+                        </div>
+                        <div class="title-wrapper">
+                            <div class="title-wrap">
+                                <h5>Dark gənc dəsti</h5>
+                            </div>
+
+                            <div class="box-bottom">
+                                <div class="more-btn">Məhsula bax</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <div class="box-top">
+                        <span class="product-cat">Yumşaq dəstlər / Çox satılanlar</span>
+                        <div class="heart"><svg width="17px" height="17px" viewBox="0 0 17 17"
+                                xmlns="http://www.w3.org/2000/svg" class="heart--img" preserveAspectRatio="none">
+                                <path
+                                    d="M8.435 16.323l7.23-8.168c1.777-1.866 1.777-4.9 0-6.766-1.763-1.852-4.613-1.852-6.376 0-.14.146-.27.3-.388.463l-.403.547-.403-.547a4.752 4.752 0 0 0-.387-.463c-1.764-1.852-4.613-1.852-6.377 0-1.777 1.866-1.777 4.9.015 6.782l7.09 8.152z"
+                                    fill="#FFF" fill-rule="evenodd"></path>
+                            </svg>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                        </div>
+                    </div>
+                    <a href="/">
+                        <div class="img-wrap">
+                            <img src="./img/yumsaq dest.jpg" alt="product">
+                        </div>
+                        <div class="title-wrapper">
+                            <div class="title-wrap">
+                                <h5>Via yumşaq dəsti</h5>
+                            </div>
+
+                            <div class="box-bottom">
+                                <div class="more-btn">Məhsula bax</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="product-box">
+                    <div class="box-top">
+                        <span class="product-cat">Yataq dəstləri / Çox satılanlar</span>
+                        <div class="heart"><svg width="17px" height="17px" viewBox="0 0 17 17"
+                                xmlns="http://www.w3.org/2000/svg" class="heart--img" preserveAspectRatio="none">
+                                <path
+                                    d="M8.435 16.323l7.23-8.168c1.777-1.866 1.777-4.9 0-6.766-1.763-1.852-4.613-1.852-6.376 0-.14.146-.27.3-.388.463l-.403.547-.403-.547a4.752 4.752 0 0 0-.387-.463c-1.764-1.852-4.613-1.852-6.377 0-1.777 1.866-1.777 4.9.015 6.782l7.09 8.152z"
+                                    fill="#FFF" fill-rule="evenodd"></path>
+                            </svg>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                            <div class="heart-dot"></div>
+                        </div>
+                    </div>
+                    <a href="/">
+                        <div class="img-wrap">
+                            <img src="./img/yatag desti.jpeg" alt="product">
+                        </div>
+                        <div class="title-wrapper">
+                            <div class="title-wrap">
+                                <h5>Elf yataq dəsti</h5>
+                            </div>
+
+                            <div class="box-bottom">
+                                <div class="more-btn">Məhsula bax</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="categories" class="mouse-wheel">
+        <div class="carousels-wrapper">
+            <div class="cat-carousel cat-carousel1 owl-carousel owl-theme">
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat1.jpeg" alt="cat-img">
+                        <h6>Yataq dəstləri</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat2.jpeg" alt="cat-img">
+                        <h6>Yumşaq dəstlər</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat3.webp" alt="cat-img">
+                        <h6>Qonaq dəstləri</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat4.jpeg" alt="cat-img">
+                        <h6>Gənc otaqları</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat5.jpeg" alt="cat-img">
+                        <h6>Aksesuar</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat6.jpg" alt="cat-img">
+                        <h6>Matraslar</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="cat-carousel cat-carousel2 owl-carousel owl-theme">
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat6.jpg" alt="cat-img">
+                        <h6>Matraslar</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat2.jpeg" alt="cat-img">
+                        <h6>Yumşaq dəstlər</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat4.jpeg" alt="cat-img">
+                        <h6>Gənc otaqları</h6>
+                    </a>
+                </div>
+                <div class="cat-box dif-cat-box">
+                    <a href="/">
+                        <h6>Bütün məhsullar</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat5.jpeg" alt="cat-img">
+                        <h6>Aksesuar</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat1.jpeg" alt="cat-img">
+                        <h6>Yataq dəstləri</h6>
+                    </a>
+                </div>
+                <div class="cat-box">
+                    <a href="/">
+                        <img src="./img/cat3.webp" alt="cat-img">
+                        <h6>Qonaq dəstləri</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="stores" class="mouse-wheel">
+        <div class="container">
+            <div class="row align-items-center justify-content-center stores-row">
+                <div class="col-xl-8 col-lg-7 stores-text">
+                    <h2><span>"Yağmur"</span>a baxmadan <br>qərar verməyin!</h2>
+                </div>
+                <div class="col-xl-4 col-lg-5 col-md-7 store-box-wrap">
+
+                    <div class="store-box">
+                        <img src="./img/yagmurmebel.jpeg" alt="store">
+                        <div class="store-text">
+                            Babək Pr 76 C <br>(Xalqlar dostluğu dairəsinin yanı)
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="mouse-wheel">
+        <h3 class="title">Kampaniyalar</h3>
+
+        <div class="swiper news-carousel">
+            <div class="swiper-wrapper">
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news1.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news2.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news3.webp" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news1.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news2.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news3.webp" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news1.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news2.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news3.webp" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news1.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news2.jpeg" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+                <div class="news-box swiper-slide">
+                    <a href="#">
+                        <img src="./img/news3.webp" alt="news">
+                        <span class="date">29/01/2022</span>
+                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione consequuntur officia,
+                            numquam est praesentium quis ea sunt facilis distinctio eius aut perspiciatis nemo ipsa?
+                            Facere earum soluta voluptatem similique quos!</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="section-bottom">
+                <a href="/" class="all-news">Bütün kampaniyalar</a>
+                <div class="carousel-controls">
+                    <div class="swiper-pagination"></div>
+                    <div class="custom-nav">
+                        <div class="swiper-button-prev swiper-button-nav">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                                <g fill="none" stroke-width="2">
+                                    <path d="m11.5 20.5-4.73-4.73 4.73-4.77"></path>
+                                    <path d="m25.23 15.77h-17" stroke-linecap="square"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next swiper-button-nav">
+                            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                                <g fill="none" stroke-width="2">
+                                    <path d="m20.5 11 4.73 4.73-4.73 4.77"></path>
+                                    <path d="m23.77 15.77h-17" stroke-linecap="square"></path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section id="call-to-action">
+         <div class="container">
+             <div class="row align-items-center">
+                 <div class="col-xxl-7 col-xl-6 col-lg-5">
+                     <h3>Sizin üçün buradayıq! Sual verin, cavablandıraq</h3>
+                 </div>
+                 <div class="col-xxl-5 col-xl-6 col-lg-7">
+                     <div class="buttons">
+                         <a href="https://api.whatsapp.com/send?phone=+994507764545&amp;text=Salam, sizə www.yagmurmebel.az saytından yazıram."
+                             target="_blank" class="action-btn">
+                             <span>Whatsapp-a yaz</span>
+                             <div class="arrow"></div>
+                         </a>
+                         <a href="javascript:void(0)" class="action-btn" data-bs-toggle="modal"
+                             data-bs-target="#get-offer">
+                             <span>Biz sizə zəng edək</span>
+                             <div class="arrow"></div>
+                         </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </section>
+      <footer>
+          <div class="section-top">
+              <div class="container">
+                  <div class="row align-items-end">
+                      <div class="col-lg-3 col-md-6">
+                          <h4>Qaynar <span>xətt</span></h4>
+                          <ul>
+                              <li>
+                                  <a href="tel:+994123704545">
+                                      <img class="mr-2" src="./img/call_icon.png">
+                                      (+99412) 370 45 45
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="col-lg-9 col-md-6">
+                          <div class="d-flex justify-content-end">
+                              <ul class="footer-list">
+                                  <li>
+                                      <a href="/">Ana səhifə</a>
+                                  </li>
+                                  <li>
+                                      <a href="/">Haqqımızda</a>
+                                  </li>
+                                  <li>
+                                      <a href="/">Məhsullar</a>
+                                  </li>
+                                  <li>
+                                      <a href="/">Kampaniyalar</a>
+                                  </li>
+                                  <li>
+                                      <a href="/">Təklif və iradlarınız</a>
+                                  </li>
+                                  <li>
+                                      <a href="/">Əlaqə</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="section-bottom">
+              <div class="container">
+                  <div class="row justify-content-between">
+                      <div class="copyright-wrap">
+                          <ul class="social-media">
+                              <li><a href="https://www.facebook.com/YagmurMebel/" target="_blank"><i
+                                          class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="https://www.instagram.com/yagmur__mebel/" target="_blank"><i
+                                          class="fab fa-instagram"></i></a></li>
+                          </ul>
+                          <span>© Copyright 2022 Yagmur Mebel. Bütün hüquqları qorunur</span>
+                      </div>
+                      <p>Saytın hazırlanması: <a href="https://okmedia.az/" target="_blank"><img src="./img/okmedia.png"
+                                  alt="okmedia logo"></a></p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/fontawesome.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="./js/zoom.min.js"></script>
+    <script src="./js/wowslider.js"></script>
+    <script src="./js/wowscript.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
